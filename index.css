@@ -15,6 +15,10 @@ header {
   display: none;
 }
 
+.center {
+  text-align: center;
+}
+
 .headerText {
   flex: 1;
   display: flex;
@@ -46,10 +50,6 @@ hr {
   border: none;
 }
 
-/* .tabContent {
-  display: none;
-} */
-
 .tabs button:hover {
   background-color: #ccc;
 }
@@ -57,6 +57,18 @@ hr {
 /* Create an active/current tablink class */
 .tabs button.active {
   background-color: #ccc;
+}
+
+.ctaContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cta {
+  width: 400px;
+  height: 600px;
+  padding: 20px;
+  background-color: #fafafa;
 }
 
 footer {
