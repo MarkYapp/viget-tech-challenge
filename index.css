@@ -7,12 +7,12 @@ button:hover {
   cursor: pointer;
 }
 
-.hidden {
-  display: none;
-}
-
 header {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .headerText {
@@ -36,9 +36,27 @@ hr {
   margin: 0;
 }
 
-.tabbedContentBox {
+.tabs {
   display: flex;
   flex-direction: row;
+  list-style: none;
+}
+
+.tabButton {
+  border: none;
+}
+
+/* .tabContent {
+  display: none;
+} */
+
+.tabs button:hover {
+  background-color: #ccc;
+}
+
+/* Create an active/current tablink class */
+.tabs button.active {
+  background-color: #ccc;
 }
 
 footer {

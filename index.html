@@ -28,36 +28,38 @@
     </header>
     <hr />
 
-    <div class="tabbedContentBox">
-      <button class="tabbedButton">Client-Side Apps</button>
-      <button class="tabbedButton">Craft CMS</button>
-      <button class="tabbedButton">Mobile Apps</button>
-      <button class="tabbedButton">React</button>
+    <div class="tabs" data-persist="true">
+      <button class="tabButton active" onclick="switchTab(event, 'tab1')">Client-Side Apps</button>
+      <button class="tabButton" onclick="switchTab(event, 'tab2')">Craft CMS</button>
+      <button class="tabButton" onclick="switchTab(event, 'tab3')">Mobile Apps</button>
+      <button class="tabButton" onclick="switchTab(event, 'tab4')">React</button>
     </div>
-    <p>
+
+    <p id="tab1" class="tabContent">
       Powering modern web experiences. Client-side apps bring the productivity-enhancing and
       user-pleasing experience of native software to the web. If your web app needs an exceptionally
-      fluid and interactive interface, look no further. Possit quaestio euripidis pri eu, ei quod
-      dico mel. Mei diceret placerat dissentiunt cu, pri debitis nostrum in. Usu ea tritani tibique,
-      ne vel nulla oporteat facilisis. Magna utamur rationibus at mei, cum ei aliquip dissentiet.
-      Dicta viris accommodare at cum.
+      fluid and interactive interface, look no further. <br /><br />Possit quaestio euripidis pri
+      eu, ei quod dico mel. Mei diceret placerat dissentiunt cu, pri debitis nostrum in. Usu ea
+      tritani tibique, ne vel nulla oporteat facilisis. Magna utamur rationibus at mei, cum ei
+      aliquip dissentiet. Dicta viris accommodare at cum.
     </p>
-    <p class="hidden">
+    <p id="tab2" class="tabContent hidden">
       Craft is a flexible and practical content management system — easy to use for members of any
       team, from designers to developers to content producers. At Viget, we’ve been using Craft to
       create usable and accessible websites since its inception. We’ve authored numerous plugins and
       are committed to sharing our knowledge with the development community.
     </p>
-    <p class="hidden">
+    <p id="tab3" class="tabContent hidden">
       We create polished and functional iOS & Android mobile apps for clients. These mobile apps are
       products of careful planning, strong design, and agile development. Using technologies like
-      React Native, we create powerful mobile experiences across platforms. Ne conceptam constituto
-      sea. Ut nec possim iriure, cu duo ferri ceteros torquatos. Nam amet alienum ex. In odio
-      euripidis vis. An vel liber consul. Duo virtute nostrud persecuti ut. Mea case perpetua
-      voluptatibus ea, ei vis illum definitionem. An mea dicant apeirian dissentias, admodum habemus
-      mel ne. Eos at vitae delicatissimi, prompta labores tibique ius at. Ipsum viris eos ea.
+      React Native, we create powerful mobile experiences across platforms. <br /><br />Ne conceptam
+      constituto sea. Ut nec possim iriure, cu duo ferri ceteros torquatos. Nam amet alienum ex. In
+      odio euripidis vis. An vel liber consul. <br /><br />Duo virtute nostrud persecuti ut. Mea
+      case perpetua voluptatibus ea, ei vis illum definitionem. An mea dicant apeirian dissentias,
+      admodum habemus mel ne. Eos at vitae delicatissimi, prompta labores tibique ius at. Ipsum
+      viris eos ea.
     </p>
-    <p class="hidden">
+    <p id="tab4" class="tabContent hidden">
       We use React to build rich, interaction-driven experiences on the web. Since 2013, Viget has
       been using React as our JavaScript (JS) library of choice for building user interfaces due to
       its component-based design, outstanding performance, and improved developer productivity. In
@@ -66,6 +68,6 @@
     </p>
     <h3>Other Capabilities</h3>
     <footer>© 2019 All rights reserved.</footer>
-    <script src="" async defer></script>
+    <script src="./index.js" async defer></script>
   </body>
 </html>
