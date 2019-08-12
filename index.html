@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet" />
+<link
+  href="https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap"
+  rel="stylesheet"
+/>
 <html class="no-js">
   <!--<![endif]-->
   <head>
@@ -20,96 +23,104 @@
     <header>
       <div class="headerText">
         <h1>Front-End Development</h1>
-        <h4>
+        <h3>
           Engineering with heart. From the beginning, we’ve believed that software has the power to
           change the world. We work with small startups and global brands alike, combining two
           decades of agile development practice with strategic thinking to make clients’ digital
           dreams a reality.
-        </h4>
-        <button>Recent Work</button>
+        </h3>
+        <button class="blackButton">
+          Recent Work
+          <i class="fas fa-arrow-right"></i>
+        </button>
       </div>
       <div class="heroImage">
-        <img src="./images/hero.jpg" alt="a laptop" />
+        <img src="./images/hero.jpg" alt="a phone, laptop, and tablet on a desk" />
       </div>
     </header>
     <hr />
 
-    <div class="tabs" data-persist="true">
+    <div class="tabs">
       <button class="tabButton active" onclick="switchTab(event, 'tab1')">Client-Side Apps</button>
       <button class="tabButton" onclick="switchTab(event, 'tab2')">Craft CMS</button>
       <button class="tabButton" onclick="switchTab(event, 'tab3')">Mobile Apps</button>
       <button class="tabButton" onclick="switchTab(event, 'tab4')">React</button>
     </div>
-
-    <p id="tab1" class="tabContent">
-      Powering modern web experiences. Client-side apps bring the productivity-enhancing and
-      user-pleasing experience of native software to the web. If your web app needs an exceptionally
-      fluid and interactive interface, look no further. <br /><br />Possit quaestio euripidis pri
-      eu, ei quod dico mel. Mei diceret placerat dissentiunt cu, pri debitis nostrum in. Usu ea
-      tritani tibique, ne vel nulla oporteat facilisis. Magna utamur rationibus at mei, cum ei
-      aliquip dissentiet. Dicta viris accommodare at cum.
-    </p>
-    <p id="tab2" class="tabContent hidden">
-      Craft is a flexible and practical content management system — easy to use for members of any
-      team, from designers to developers to content producers. At Viget, we’ve been using Craft to
-      create usable and accessible websites since its inception. We’ve authored numerous plugins and
-      are committed to sharing our knowledge with the development community.
-    </p>
-    <p id="tab3" class="tabContent hidden">
-      We create polished and functional iOS & Android mobile apps for clients. These mobile apps are
-      products of careful planning, strong design, and agile development. Using technologies like
-      React Native, we create powerful mobile experiences across platforms. <br /><br />Ne conceptam
-      constituto sea. Ut nec possim iriure, cu duo ferri ceteros torquatos. Nam amet alienum ex. In
-      odio euripidis vis. An vel liber consul. <br /><br />Duo virtute nostrud persecuti ut. Mea
-      case perpetua voluptatibus ea, ei vis illum definitionem. An mea dicant apeirian dissentias,
-      admodum habemus mel ne. Eos at vitae delicatissimi, prompta labores tibique ius at. Ipsum
-      viris eos ea.
-    </p>
-    <p id="tab4" class="tabContent hidden">
-      We use React to build rich, interaction-driven experiences on the web. Since 2013, Viget has
-      been using React as our JavaScript (JS) library of choice for building user interfaces due to
-      its component-based design, outstanding performance, and improved developer productivity. In
-      addition to powering many immersive, interactive experiences across our websites and web
-      applications, we've shared a number of React tools and components with the community.
-    </p>
+    <hr />
+    <div class="tabContentContainer">
+      <p id="tab1" class="tabContent">
+        Powering modern web experiences. Client-side apps bring the productivity-enhancing and
+        user-pleasing experience of native software to the web. If your web app needs an
+        exceptionally fluid and interactive interface, look no further. <br /><br />Possit quaestio
+        euripidis pri eu, ei quod dico mel. Mei diceret placerat dissentiunt cu, pri debitis nostrum
+        in. Usu ea tritani tibique, ne vel nulla oporteat facilisis. Magna utamur rationibus at mei,
+        cum ei aliquip dissentiet. Dicta viris accommodare at cum.
+      </p>
+      <p id="tab2" class="tabContent hidden">
+        Craft is a flexible and practical content management system — easy to use for members of any
+        team, from designers to developers to content producers. At Viget, we’ve been using Craft to
+        create usable and accessible websites since its inception. We’ve authored numerous plugins
+        and are committed to sharing our knowledge with the development community.
+      </p>
+      <p id="tab3" class="tabContent hidden">
+        We create polished and functional iOS & Android mobile apps for clients. These mobile apps
+        are products of careful planning, strong design, and agile development. Using technologies
+        like React Native, we create powerful mobile experiences across platforms. <br /><br />Ne
+        conceptam constituto sea. Ut nec possim iriure, cu duo ferri ceteros torquatos. Nam amet
+        alienum ex. In odio euripidis vis. An vel liber consul. <br /><br />Duo virtute nostrud
+        persecuti ut. Mea case perpetua voluptatibus ea, ei vis illum definitionem. An mea dicant
+        apeirian dissentias, admodum habemus mel ne. Eos at vitae delicatissimi, prompta labores
+        tibique ius at. Ipsum viris eos ea.
+      </p>
+      <p id="tab4" class="tabContent hidden">
+        We use React to build rich, interaction-driven experiences on the web. Since 2013, Viget has
+        been using React as our JavaScript (JS) library of choice for building user interfaces due
+        to its component-based design, outstanding performance, and improved developer productivity.
+        In addition to powering many immersive, interactive experiences across our websites and web
+        applications, we've shared a number of React tools and components with the community.
+      </p>
+    </div>
     <h3 class="center">Other Capabilities</h3>
     <div class="ctaContainer">
       <div class="cta">
         <h3>Creative</h3>
         <hr />
-        <h3>Combining style with substance.</h3>
+        <h4>Combining style with substance.</h4>
         <p>
           The best digital experiences are ones that go beyond being merely functional and
           efficient. To draw interest with stunning visuals, provide interactive elements, and tell
           a compelling story is to create an experience worth revisiting.
         </p>
-        <i class="fas fa-2x fa-arrow-circle-right"></i>
+        <div class="arrowCircle">
+          <i class="fas fa-arrow-right"></i>
+        </div>
       </div>
       <div class="cta">
         <h3>User Experience</h3>
         <hr />
-        <h3>Delightfully usable.</h3>
+        <h4>Delightfully usable.</h4>
         <p>
           Our user-centered approach starts with discovering the perceptions, behaviors, and goals
           of your customers and visitors. We blend this knowledge with both data analysis and an
           understanding of your business to engage users and get results.
         </p>
-        <i class="fas fa-2x fa-arrow-circle-right"></i>
+        <i class="fas fa-arrow-right"></i>
       </div>
       <div class="cta">
         <h3>Data and Analytics</h3>
         <hr />
-        <h3>Guided by data.</h3>
+        <h4>Guided by data.</h4>
         <p>
           We make strategic, data-informed decisions that improve the performance of sites,
           products, and marketing efforts. Through our data collection and interpretation, we’ll
           show you how to better drive and convert visitors more efficiently with your marketing
           budget.
         </p>
-        <i class="fas fa-2x fa-arrow-circle-right"></i>
+        <i class="fas fa-arrow-right"></i>
       </div>
     </div>
-    <footer>© 2019 All rights reserved.</footer>
+    <footer>
+      <p>© 2019 All rights reserved.</footer></p>
     <script src="./index.js" async defer></script>
   </body>
 </html>
