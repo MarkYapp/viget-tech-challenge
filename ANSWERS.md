@@ -5,6 +5,7 @@
 - Are there any performance concerns with this design? What techniques could help improve the loading or perceived loading experience?
 
 I chose the UI/Interface Focus: Tabbed Content challenge.
+Could not get CTA arrows positioned relative to bottom edge of parent container - any addition of a directional position made it move unpredictably. Moved on.
 
 ToDo:
 

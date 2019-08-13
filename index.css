@@ -1,6 +1,6 @@
 body {
   font-family: 'Muli', sans-serif;
-  margin: 0 20px 0 20px;
+  margin: 0;
 }
 
 button:hover {
@@ -17,6 +17,7 @@ button:hover {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -51,8 +52,7 @@ h3 {
 .arrowCircle {
   height: 20px;
   width: 20px;
-  margin: auto;
-
+  margin: 65px auto 0;
   padding: 5px;
   border: 1px solid #e57201;
   border-radius: 50%;
@@ -60,11 +60,10 @@ h3 {
 
 .fa-arrow-right {
   color: #e57201;
-  /* margin-left: 5px; */
+  margin-left: 4px;
 }
 
 .heroImage {
-  /* flex: 1; */
   height: 650px;
   width: 650px;
 }
@@ -115,11 +114,13 @@ hr {
 
 .ctaContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 30px;
+  margin: 0 50px 50px 30px;
 }
 
 .cta {
+  margin: 0 3%;
   width: 300px;
   height: 400px;
   padding: 25px;
@@ -143,6 +144,9 @@ footer {
   text-align: right;
   background-color: #141e3c;
   border-top: 1px solid #e57201;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 footer p {
