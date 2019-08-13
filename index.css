@@ -1,6 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Muli', sans-serif;
-  margin: 0;
+  height: 100vh;
 }
 
 button:hover {
@@ -22,16 +32,16 @@ header {
 }
 
 .headerText {
-  /* flex: 1; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 650px;
+  width: 70%;
+  margin-top: 50px;
   padding: 0 20px;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 40px;
   margin: 0;
 }
 
@@ -42,30 +52,21 @@ h3 {
 .blackButton {
   height: 40px;
   width: 120px;
-  /* padding: 10px; */
   color: white;
   font-weight: 400;
   background-color: black;
   border-radius: 20px;
+  margin: 0 auto 20px;
 }
 
-.arrowCircle {
-  height: 20px;
-  width: 20px;
-  margin: 65px auto 0;
-  padding: 5px;
-  border: 1px solid #e57201;
-  border-radius: 50%;
-}
-
-.fa-arrow-right {
+#blackButtonArrow {
+  margin-left: 5px;
   color: #e57201;
-  margin-left: 4px;
 }
 
 .heroImage {
-  height: 650px;
-  width: 650px;
+  height: 90%;
+  width: 90%;
 }
 
 .heroImage img {
@@ -82,7 +83,7 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   height: 70px;
 }
@@ -93,10 +94,6 @@ hr {
   font-size: 12px;
 }
 
-.tabs button:hover {
-  background-color: #fafafa;
-}
-
 /* Create an active/current tablink class */
 .tabs button.active {
   color: #e57201;
@@ -104,12 +101,8 @@ hr {
 }
 
 .tabContent {
-  width: 70%;
+  width: 80%;
   margin: 30px auto;
-}
-
-.tabContentContainer {
-  height: 150px;
 }
 
 .ctaContainer {
@@ -122,9 +115,9 @@ hr {
 .cta {
   margin: 0 3%;
   width: 300px;
-  height: 400px;
-  padding: 25px;
   background-color: #fafafa;
+  padding: 25px;
+  margin-bottom: 30px;
 }
 
 .cta h3 {
@@ -136,6 +129,22 @@ hr {
 .cta h4 {
   font-size: 18px;
   font-weight: 700;
+}
+
+.arrowCircle {
+  height: 30px;
+  width: 30px;
+  margin: 45px auto 0;
+  padding: 5px;
+  border: 1px solid #e57201;
+  border-radius: 50%;
+}
+
+.cta-arrow {
+  color: #e57201;
+  position: relative;
+  bottom: 1px;
+  left: 2px;
 }
 
 footer {
@@ -152,4 +161,55 @@ footer {
 footer p {
   font-size: 12px;
   color: white;
+}
+
+/* responsive CSS */
+
+@media only screen and (max-width: 568px) {
+  .cta {
+    border: 1px solid #e9e9e9;
+  }
+}
+
+@media only screen and (min-width: 568px) {
+  .heroImage {
+    height: 70%;
+    width: 70%;
+  }
+
+  .tabs button:hover {
+    background-color: #fafafa;
+  }
+
+  .tabs {
+    width: 70%;
+  }
+
+  .tabContent {
+    width: 70%;
+    margin: 30px auto;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .headerText {
+    width: 650px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .blackButton {
+    margin: 0 0 30px 0;
+  }
+
+  .heroImage {
+    height: 650px;
+    width: 650px;
+  }
+
+  .tabContentContainer {
+    height: 150px;
+  }
 }

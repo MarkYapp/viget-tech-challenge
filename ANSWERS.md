@@ -9,7 +9,6 @@ Could not get CTA arrows positioned relative to bottom edge of parent container 
 
 ToDo:
 
-- pixel perfect
 - responsive to 320px wide (iPhone 5/SE)
 - Be creative with hover and transition animations.
 - Ensure that your work is accessible to people using keyboards and screen readers.
